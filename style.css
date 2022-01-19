@@ -1,14 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
 * {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 body {
 }
 
 /* header part start */
 header {
+  margin: 80px 0px;
 }
 .small-container {
+  width: 1200px;
+  margin: auto;
 }
 .small-container-items {
+  display: grid;
+  grid-template-columns: repeat(3, 700px 500px 100px);
+  align-items: end;
 }
 .logo {
 }
@@ -17,10 +29,18 @@ header {
 nav {
 }
 nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 nav ul li {
+  list-style: none;
 }
 nav ul li a {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 nav ul i {
 }
