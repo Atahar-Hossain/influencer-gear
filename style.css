@@ -8,6 +8,9 @@
 }
 body {
 }
+li {
+  list-style: none;
+}
 /* common part end
 ++++++++++++++++++ */
 
@@ -165,8 +168,22 @@ main {
 
 /* popular collection start 
 ===========================*/
+.popular-collection-section {
+}
+.popular-heading {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+.popular-collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .popular-collection {
 }
+
 .popular-collection-box {
 }
 .popular-collection-box-item {
@@ -178,6 +195,8 @@ main {
 .popular-price {
 }
 .rating {
+  display: flex;
+  flex-wrap: wrap;
 }
 .rating li {
 }
