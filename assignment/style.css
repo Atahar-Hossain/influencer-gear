@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* header section start */
+.header {
+}
+header {
+  margin: 25px 0px;
+}
+.container {
+  width: 1400px;
+  margin: auto;
+}
+.header-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo {
+  max-width: 20%;
+  flex-basis: 20%;
+}
+.logo-name {
+  font-size: 40px;
+  color: blue;
+  font-family: roboto;
+  font-weight: 900;
+}
+nav {
+  max-width: 80%;
+  flex-basis: 80%;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px 0px;
+}
+/* header part end */
+
+/* banner part start */
+.banner-section {
+  position: relative;
+}
+.blue-banner {
+}
+.orange-banner {
+  position: absolute;
+  top: 0;
+}
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-detail {
+  font-size: 82px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.click-down {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 24px;
+  animation-name: arrow-down;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -o-animation-timing-function: ease-in-out;
+}
+.click-down i {
+}
+
+@keyframes arrow-down {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+
+/* banner part end */
+
+/* who we are start */
+.who-we-are {
+  margin: 100px 0px;
+}
+.whoweare-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.whoweare-content {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+span {
+  width: 50px;
+  height: 5px;
+  background-color: rgb(255, 115, 0);
+  display: block;
+}
+.whoweare-heading {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  color: blue;
+}
+.whoweare-content p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.657);
+  text-align: justify;
+}
+
+.whoweare-image {
+  max-width: 45%;
+  flex-basis: 45%;
+}
+.whoweare-image img {
+  width: 70%;
+  float: right;
+}
+/* who we are end */
