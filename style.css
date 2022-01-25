@@ -104,6 +104,7 @@ main {
   border-radius: 41px;
   border: none;
   align-items: center;
+  cursor: pointer;
 }
 .button-text {
   color: #fff;
