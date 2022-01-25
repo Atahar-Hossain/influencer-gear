@@ -176,37 +176,60 @@ main {
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
+  padding-bottom: 30px;
 }
 .popular-collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 1.5em;
 }
 .popular-collection {
 }
 
 .popular-collection-box {
+  background: white;
+  box-shadow: 0 0 10px 7px #4040401c;
 }
 .popular-collection-box-item {
+  padding: 20px;
 }
 .popular-img {
+  width: 100%;
 }
 .popular-image-title {
+  color: #18191f;
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 10px 0px;
 }
 .popular-price {
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 400;
 }
 .rating {
   display: flex;
   flex-wrap: wrap;
 }
 .rating li {
+  color: #fb8200;
+  letter-spacing: 3px;
+  font-size: 18px;
 }
 .rating li i {
 }
 .number-rating {
+  color: #5e6366;
+  font-size: 18px;
+  padding-left: 10px;
 }
 .product-description {
+  color: #787885;
+  font-size: 14px;
 }
-
+.popular-link{}
 /* popular collection end 
 =========================*/
 
