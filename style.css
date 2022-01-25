@@ -249,20 +249,44 @@ main {
 /* brain stroming part start 
 ============================*/
 .brain-stroming {
+  margin: 30px 0px 100px 0px;
 }
 .featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .featured-image {
+  max-width: 30%;
+  flex-basis: 30%;
 }
 .featured-image img {
+  width: 100%;
 }
 .featured-detail {
+  max-width: 65%;
+  flex-basis: 65%;
 }
 .featured-heading {
+  color: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
 }
 .featured-paragraph {
+  width: 65%;
+  margin: 10px 0px;
+  line-height: 2;
+  color: #6c6c6c;
+  font-size: 16px;
 }
 .join-button {
+  background: #e02c6d;
+  padding: 10px 24px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
 }
 /* brain stroming part end 
 ==========================*/
