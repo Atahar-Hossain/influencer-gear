@@ -229,13 +229,40 @@ main {
   color: #787885;
   font-size: 14px;
 }
-.popular-link{}
+.popular-link {
+  text-align: end;
+  padding: 20px 0px;
+}
+.seemore-text a {
+  font-size: 14px;
+  color: #e02c6d;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.seemore-icon {
+  font-size: 14px;
+  color: #e02c6d;
+}
 /* popular collection end 
 =========================*/
 
 /* brain stroming part start 
 ============================*/
 .brain-stroming {
+}
+.featured-products {
+}
+.featured-image {
+}
+.featured-image img {
+}
+.featured-detail {
+}
+.featured-heading {
+}
+.featured-paragraph {
+}
+.join-button {
 }
 /* brain stroming part end 
 ==========================*/
