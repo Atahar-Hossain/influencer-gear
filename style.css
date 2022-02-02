@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
 * {
-  font-family: "Poppins", sans-serif;
   padding: 0px;
+  font-family: "Poppins", sans-serif;
   margin: 0px;
   box-sizing: border-box;
 }
+html,
 body {
+  background-color: #fff;
+  height: 100%;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  margin: 0px;
+  padding: 0px;
 }
+
 li {
   list-style: none;
 }
@@ -18,28 +26,38 @@ li {
 ====================*/
 header {
   margin: 80px 0px;
+  display: flex;
 }
-.small-container {
+.container {
   width: 1200px;
   margin: auto;
+  padding: 0px 32px;
 }
 .small-container-items {
   display: grid;
-  grid-template-columns: repeat(3, 700px 500px 100px);
-  align-items: end;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
+/* .popular-container {
+  max-width: 1050px;
+  margin: auto;
+} */
 .logo {
 }
 .logo-name {
 }
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 nav ul {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(5, 1fr); */
 }
 nav ul li {
   list-style: none;
+  padding: 15px;
 }
 nav ul li a {
   color: #3a3a3a;
@@ -51,6 +69,7 @@ nav ul li a {
 nav ul i {
 }
 .shopping-cart {
+  padding: 16px;
 }
 .shopping-cart i {
 }
@@ -65,6 +84,7 @@ main {
 /* banner part start 
 ====================*/
 .banner-part {
+  display: flex;
 }
 .banner-detail {
   display: flex;
@@ -130,6 +150,7 @@ main {
 /* brand part start 
 ===================*/
 .brand-part {
+  display: flex;
   margin: 80px 0px;
 }
 .gradient {
@@ -151,9 +172,6 @@ main {
 .brand-logos {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
   margin: 30px 0px;
 }
 .brand-logos li {
@@ -170,6 +188,7 @@ main {
 /* popular collection start 
 ===========================*/
 .popular-collection-section {
+  display: flex;
 }
 .popular-heading {
   color: #3a3a3a;
@@ -180,6 +199,7 @@ main {
   padding-bottom: 30px;
 }
 .popular-collections {
+  padding: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2em;
@@ -251,6 +271,7 @@ main {
 /* brain stroming part start 
 ============================*/
 .brain-stroming {
+  display: flex;
   margin: 30px 0px 100px 0px;
 }
 .featured-products {
@@ -331,10 +352,211 @@ footer {
   width: 40px;
   background-color: rgba(90, 90, 90, 0.397);
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   list-style: none;
   line-height: 40px;
   border-radius: 50%;
 }
+
 /* footer part end 
 ==================*/
+
+/* responsive part start
+======================== */
+#check {
+  display: none;
+}
+.checkbtn {
+  display: none;
+  cursor: pointer;
+  float: left;
+}
+
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  .banner-detail {
+  }
+  .brand-logos {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 2em;
+    padding-left: 0px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .banner-detail {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    text-align: center;
+    max-width: 70%;
+  }
+  .banner-heading {
+    font-size: 45px;
+  }
+  .prebook-button {
+    margin: auto;
+  }
+  .banner-img {
+    max-width: 60%;
+  }
+  .banner-img img {
+  }
+  .popular-collections {
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-items: center; */
+    grid-column-gap: 48px;
+    grid-row-gap: 3em;
+  }
+  .popular-link {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .featured-products {
+    flex-direction: column;
+  }
+  .featured-image {
+    max-width: 100%;
+  }
+  .featured-detail {
+    max-width: 50%;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .featured-heading {
+    font-size: 25px;
+  }
+  .featured-paragraph {
+    width: 90%;
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 975px) {
+  .checkbtn {
+    display: block;
+  }
+  .menu-items {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    background-color: #000000a1;
+    top: 150px;
+    left: -100%;
+    text-align: center;
+    /* flex-direction: column; */
+    display: block;
+    line-height: 4;
+    transition: all 0.5s;
+  }
+  .menu-items li {
+    display: block;
+    margin: auto;
+  }
+  .menu-items li a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  .menu-items li i {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .shopping-cart {
+  }
+  .menu-items li a:hover {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ .menu-items {
+    left: 0%;
+  }
+  /* .check:checked ~ .menu-items {
+    left: 0%;
+  } */
+  #check {
+    display: block;
+  }
+  .small-container-items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 960px) {
+  .popular-collections {
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-items: center; */
+    grid-column-gap: 48px;
+    grid-row-gap: 3em;
+  }
+  .brand-logos {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 2em;
+    padding-left: 0px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .banner-heading {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+  .featured-detail {
+    max-width: 63%;
+  }
+  .featured-heading {
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .featured-paragraph {
+    width: 100%;
+  }
+  .brand-logos {
+    /* margin: 20px 0px; */
+  }
+  .gradient {
+    margin: 20px 0px;
+  }
+  .brand-logos li {
+    display: inline;
+    margin: auto;
+  }
+  .brand-logos li a img {
+    width: 70%;
+  }
+  .header {
+    margin: 15px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .featured-paragraph {
+    font-size: 16px;
+  }
+
+  .featured-heading {
+    font-size: 22px;
+    padding: 0px;
+  }
+}
+/* responsive part end
+====================== */
